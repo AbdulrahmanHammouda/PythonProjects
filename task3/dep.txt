@@ -1,0 +1,7 @@
+Open cv
+Numpy
+pillow
+Log
+ModesEnum
+imageModel
+pyqtgraph

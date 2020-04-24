@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>769</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Image2!</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Image1!</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QComboBox" name="ImageTwoViewChoice">
+          <item>
+           <property name="text">
+            <string>Choose a Component</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mag</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Phase</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Real</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Img</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QComboBox" name="ImageOneViewChoice">
+            <item>
+             <property name="text">
+              <string>Choose a Component:</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Mag</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Phase</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Real</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Img</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="PlotWidget" name="ImageOneview"/>
+          </item>
+          <item>
+           <widget class="PlotWidget" name="ImageOneComponent"/>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="Browser">
+          <property name="text">
+           <string>UploadImage</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="PlotWidget" name="ImageTwoView"/>
+          </item>
+          <item>
+           <widget class="PlotWidget" name="ImageTwoComponent"/>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="WarningTabOne">
+          <property name="text">
+           <string>Load Your Image!</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="4" column="0">
+         <widget class="QComboBox" name="ComponentTwoChocie">
+          <item>
+           <property name="text">
+            <string>Choose Your Mixer:</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mag</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Phase</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Real</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Imag</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>UniMag</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>UniPhase</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>OutputOne</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PlotWidget" name="ModifiedOne"/>
+          </item>
+         </layout>
+        </item>
+        <item row="5" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>OutputTwo</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PlotWidget" name="ModifiefTwo"/>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>ComponentOne</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="ImageMixerOneChoice">
+            <item>
+             <property name="text">
+              <string>Choose An Image:</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ImageOne</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ImageTwo</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="MixerSliderOne">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="SliderOneValue">
+            <property name="text">
+             <string>00</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <widget class="QComboBox" name="ComponentOneChoice">
+          <item>
+           <property name="text">
+            <string>Choose Your Mixer</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mag</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Phase</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Real</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Imag</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>UniMag</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>UniPhase</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Mixer Output to :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="OutputChoice">
+            <item>
+             <property name="text">
+              <string>Choose Output</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>OutPutOne</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>OutputTwo</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>ComponentTwo</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="ImageMixerTwoChoice">
+            <item>
+             <property name="text">
+              <string>Choose An Image</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ImageOne</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ImageTwo</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="MixerSliderTwo">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="SliderTwoValue">
+            <property name="text">
+             <string>00</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="WarningTabTwo">
+          <property name="text">
+           <string>Make Your Mixer!</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
